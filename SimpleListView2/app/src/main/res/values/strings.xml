@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleListView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_simple_lv">SimpleLV</string>
+    <string name="help">Help</string>
+    <string name="dialog_message">Buttons add to List, click on item deletes it from the List, long click on item shows its position in List (hit back to dismiss me)</string>
+    <string name="add_using_list">Add Using List</string>
+    <string name="add_using_adapter">Add Using Adapter</string>
+
+</resources>

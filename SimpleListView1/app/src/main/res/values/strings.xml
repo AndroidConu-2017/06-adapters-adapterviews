@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simplest LV</string>
+    <string name="swap_list">Swap Lists</string>
+
+    <string-array name="countries_array">
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Canada</item>
+        <item>Spain</item>
+        <item>France</item>
+        <item>Brazil</item>
+        <item>Mexico</item>
+        <item>Costa Rica</item>
+    </string-array>
+
+</resources>
