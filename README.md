@@ -1,4 +1,4 @@
-# Adatpers AdatperViews
+# Adapters AdapterViews
 # SimpleGridView
 Uses a GridView with an adapter for images that extends BaseAdapter
 # Simplest LV (SimpleListView1)
