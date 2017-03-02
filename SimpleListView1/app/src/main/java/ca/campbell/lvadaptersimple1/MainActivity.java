@@ -22,6 +22,9 @@ import cs534.samples.simplestlv.R;
  * the ListView responds to item click events.
  * 
  * (commented code to populate  from an inline static array.)
+ *  @ P Campbell
+ *  @ 2017-03-01
+ *
  */
 public class MainActivity extends Activity {
 	private ListView lv;
@@ -43,6 +46,7 @@ public class MainActivity extends Activity {
 		// use the strings.xml array
 		String countries[] = getResources().getStringArray(
 				R.array.countries_array);
+
 		/* If I were going to manipulate this array I would use a List
 		 * but since I am not I save a step
 		List<String> countriesList = new ArrayList<String>(Arrays.asList(countries));

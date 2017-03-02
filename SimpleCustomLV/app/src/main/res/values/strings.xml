@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleCustomLV</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+<string-array name="dog_names">
+    <item>Phydough</item>
+    <item>Fifi</item>
+    <item>Sam</item>
+    <item>Rex</item>
+    <item>Finney</item>
+    <item>Cosmo</item>
+    <item>Guiness</item>
+    <item>Daisy</item>
+</string-array>
+</resources>
