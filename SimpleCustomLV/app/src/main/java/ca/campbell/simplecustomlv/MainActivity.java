@@ -4,6 +4,7 @@ package ca.campbell.simplecustomlv;
  */
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.TextureView;
@@ -84,6 +85,10 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(MainActivity.this, "Clicked " + listDogs[position], Toast.LENGTH_SHORT).show();
+				Intent i = new Intent(context, DogActivity.class);
+				i.putExtra("dog_name", listDogs[position]);
+				i.putExtra("dog_image", listIdDogs[position]);
+				context.startActivity(i);
 			}
 		});
 			return row;
