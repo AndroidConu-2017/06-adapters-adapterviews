@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
  *  (at least after this has been called once), so there's a check to see if the object is null.
  *  If it is null, an ImageView is instantiated and configured with desired properties 
  *  for the image presentation:
- *  -setLayoutParams(ViewGroup.LayoutParams) sets the height and width for the View—
+ *  -setLayoutParams(ViewGroup.LayoutParams) sets the height and width for the View
  *  	this ensures that, no matter the size of the drawable, each image is resized and 
  *  	cropped to fit in these dimensions, as appropriate.
  *  -setScaleType(ImageView.ScaleType) declares that images should be cropped toward the center (if necessary).
@@ -81,9 +81,11 @@ public class MainActivity extends Activity {
 			ImageView imageView;
 			if (convertView == null) {  // if it's not recycled, initialize some attributes
 				imageView = new ImageView(context);
-				imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
-				imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-				imageView.setPadding(8, 8, 8, 8);
+				// don't do this it constrains
+				imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
+				imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+			//	imageView.setPadding(4, 4, 4, 4);
+				imageView.setBackgroundColor(getResources().getColor(android.R.color.holo_purple));
 			} else {
 				imageView = (ImageView) convertView;
 			}
