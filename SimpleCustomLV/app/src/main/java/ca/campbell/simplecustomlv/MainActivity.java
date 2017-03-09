@@ -1,6 +1,13 @@
 package ca.campbell.simplecustomlv;
-/*
- * Code from http://developer.android.com/guide/topics/ui/layout/gridview.html
+/**
+ *
+ * This code implements a simple CustomAdapter for a list view
+ * in order to display an small image and a text in the list
+ *
+ * some code from http://developer.android.com/guide/topics/ui/layout/gridview.html
+ *
+ * @author P.M.Campbell
+ * @version today
  */
 import android.app.Activity;
 import android.content.Context;
@@ -78,6 +85,10 @@ public class MainActivity extends Activity {
 				// can set the listener here if I want to
 			} else {
 				vh = (ViewHolder) convertView.getTag();
+				// spotted by Brian Doherty 2017-03-06
+				// we are re using the view but changing the content
+				vh.tv.setText(listDogs[position]);
+				vh.iv.setImageResource(listIdDogs[position]);
 			}
 
 		row.setOnClickListener(  new OnClickListener() {
